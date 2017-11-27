@@ -4,7 +4,7 @@ public class Dice{
     private int value;
     
     public void Dice(){
-	    value = play();
+	    play();
     }
     
     public int getValue(){
@@ -15,8 +15,8 @@ public class Dice{
         this.value = value;
     }
 
-    public int play(){
-        value = (int)(Math.random()*6) + 1;
-        return value; 
+    public void play(){
+        value = (int)(Math.random()*6) + 1; 
     }
 }
+

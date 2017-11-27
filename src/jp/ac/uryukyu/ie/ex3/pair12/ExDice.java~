@@ -1,0 +1,13 @@
+package  jp.ac.uryukyu.ie.ex3.pair12;
+
+public class ExDice extends Dice{
+    private int minValue;
+    private int maxValue;
+    
+    public ExDice(int minValue, int maxValue){
+        super(value);
+        this.minValue = minValue;
+        this.maxValue = maxValue;
+        value = play();
+    }
+}
